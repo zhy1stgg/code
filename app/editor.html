@@ -1,0 +1,139 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>code</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body style="background:#f6f6f6;">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="editor">
+        <div class="logo">
+            <a href="index.html">Code</a>
+        </div>
+        <nav>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-play"></i>&nbsp;&nbsp;Run </a>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-pencil"></i>&nbsp;&nbsp;Update</a>
+                </li>
+                <li>
+                    <a href="#"><i class="glyphicon glyphicon-random"></i>&nbsp;&nbsp;Fork</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-share-alt"></i>&nbsp;&nbsp;Share&nbsp;&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu tip">
+                        <div class="tip-closer">x</div>
+                        <div class="tip-content">
+                            <p>
+                                <label>分享链接</label>
+                                <input type="text" value="http://code.hcharts.cn//" readonly>
+                            </p>
+                            <p>
+                                <label>分享全屏结果</label>
+                                <input type="text" value="http://code.hcharts.cn//" readonly>
+                            </p>
+                            <p>
+                                <label>嵌入您的页面</label>
+                                <textarea name="" id="" cols="30" rows="10" readonly>http://code.hcharts.cn/</textarea>
+                                <!-- <input type="text" value="http://code.hcharts.cn/"> -->
+                            </p>
+                            <p>
+                                <label>分享到社区</label>
+                            </p>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;Login / Register&nbsp;&nbsp;<b class="caret"></b></a>
+                    <ul class="dropdown-menu tip login-tip">
+                        <div class="tip-closer">x</div>
+                        <div class="tip-content">
+                            <p>
+                                <label>登陆</label>
+                                <input type="text" name="username" placeholder="Username">
+                            </p>
+                            <p>
+                                <label>密码</label>
+                                <input type="password" name="passowrd" placeholder="Password">
+                            </p>
+                            <p>
+                            </p>
+                            <p class="tip-float float-left">
+                                <button class="btn btn-primary">Login</button>
+                            </p>
+                            <p class="tip-float float-left">
+                                <label for="remember">
+                                    <input type="checkbox" name="remember" checked id="remember"> Stay loged in
+                                </label>
+                                <a href="#" target="_blank">New User? Sign now</a>
+                            </p>
+                            <div class="clear"></div>
+                            <p id="login-info">
+                                登陆成功，跳转中...
+                            </p>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="editor">
+        <div class="sider">
+        </div>
+    </section>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+    <!-- build:js(.) scripts/codemirror.js -->
+    <script src="/bower_components/codemirror/lib/codemirror.js"></script>
+    <script sec="/bower_components/codemirror/mode/xml/xml.js"></script>
+    <script sec="/bower_components/codemirror/mode/css/css.js"></script>
+    <script sec="/bower_components/codemirror/mode/javascript/javascript.js"></script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/editor.js"></script>
+    <!-- endbuild -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</body>
+
+</html>
