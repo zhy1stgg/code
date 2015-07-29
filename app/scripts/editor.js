@@ -17,3 +17,25 @@ $(".tip input,.tip textarea").click(function(){
 $(".tip-content").click(function(){
   return false;
 });
+
+
+/**
+ * 侧边栏点击切换
+ */
+
+$(".sider-title").click(function(){
+  var siderList = $(this).parent();
+  if(siderList.hasClass("active")) {
+    return;
+  }
+
+  var currentList = $("#sider").find(".active");
+
+  currentList.find(".sider-content").slideUp();
+   currentList.removeClass("active");
+
+
+   siderList.addClass("active");
+  siderList.find(".sider-content").slideDown();
+
+});

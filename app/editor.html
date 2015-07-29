@@ -16,6 +16,9 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- build:css(.tmp) styles/codemirror.css -->
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+    <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -27,8 +30,8 @@
     <![endif]-->
     <header class="editor">
         <div class="logo">
-            <a href="index.html">Code</a>
-        </div>
+<!--             <a href="index.html">Code</a>
+ -->        </div>
         <nav>
             <ul class="nav navbar-nav">
                 <li>
@@ -56,7 +59,6 @@
                             <p>
                                 <label>嵌入您的页面</label>
                                 <textarea name="" id="" cols="30" rows="10" readonly>http://code.hcharts.cn/</textarea>
-                                <!-- <input type="text" value="http://code.hcharts.cn/"> -->
                             </p>
                             <p>
                                 <label>分享到社区</label>
@@ -85,7 +87,7 @@
                                 <button class="btn btn-primary">Login</button>
                             </p>
                             <p class="tip-float float-left">
-                                <label for="remember">
+                                <label>
                                     <input type="checkbox" name="remember" checked id="remember"> Stay loged in
                                 </label>
                                 <a href="#" target="_blank">New User? Sign now</a>
@@ -101,8 +103,82 @@
         </nav>
     </header>
     <section class="editor">
-        <div class="sider">
-        </div>
+        <form onsubmit="return false">
+            <div class="sider">
+                <ul id="sider">
+                    <li class="sider-list active">
+                        <h3 class="sider-title">Code Options</h3>
+                        <div class="sider-content" style="display:block">
+                            <p>
+                                <input type="text" name="name" placeholder="Named your code">
+                            </p>
+                            <p>
+                                <textarea name="description" placeholder="Description your code"></textarea>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="saveLayout">
+                                <label for="saveLayout">Say layout</label>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sider-list">
+                        <h3 class="sider-title">Frameworks & Extensions</h3>
+                        <div class="sider-content">
+                            <p>
+                                <select name="" id="">
+                                    <option value="">Use jQuery?</option>
+                                    <option value="">jQuery 1.8.3</option>
+                                </select>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sider-list">
+                        <h3 class="sider-title">External Resources</h3>
+                        <div class="sider-content">
+                            <p>
+                                <input type="text" name="name" placeholder="Named your code">
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sider-list">
+                        <h3 class="sider-title">About & copyright</h3>
+                        <div class="sider-content">
+                            <p><b>About</b></p>
+                            <p><a href="/about.html#usage">How to use?</a> | <a href="/about.html#cdn">CDN files</a> | <a href="/about.html#about">about</a></p>
+                            <p>Create by <a href="http://www.52wulian.cn" target="_blank">John Doe</a>, thanks to <a href="http://codemirror.net" target="_blank">CodeMirror</a> and <a href="http://jsfiddle.net" target="_blank">Jsfiddle</a>.</p>
+                            <p>Get more infomation please follow <a href="http://weibo.com/highcharts" target="_blank">our weibo</a> and <a href="#"> blog</a></p>
+                            <p><b>Copyright</b></p>
+                            <p>© 2015 HCharts.cn</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <fieldset class="column left">
+                    <div id="panel_js" class="window top">
+                        <span class="window_label">javaScript</span>
+                        <textarea id="code_js" name="js"></textarea>
+                    </div>
+                    <div class="handler handler_horizontal"></div>
+                    <div id="panel_css" class="window bottom">
+                        <span class="window_label">HTML</span>
+                        <textarea id="code_css" name="html"></textarea>
+                    </div>
+                    <div class="shim" style="display: none;"></div>
+                </fieldset>
+                <div class="handler handler_vertical"></div>
+                <fieldset class="column right">
+                    <div id="result" class="window top">
+                    </div>
+                    <div class="handler handler_horizontal"></div>
+                    <div id="panel_html" class="window bottom">
+                        <span class="window_label">CSS</span>
+                        <textarea id="code_html" name="css"></textarea>
+                    </div>
+                    <div class="shim" style="display: none;"></div>
+                </fieldset>
+            </div>
+        </form>
     </section>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

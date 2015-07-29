@@ -2,11 +2,20 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
 /*!
   Copyright &copy; 2015
   auth: John Doe
  */
+
 $color: "#006cee";
+
+body {
+    font-family: "Helvetica", "Arial", "FreeSans", "Verdana", "Tahoma", "Lucida Sans", "Lucida Sans Unicode", "Luxi Sans", sans-serif;
+        text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased
+}
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -26,75 +35,6 @@ $color: "#006cee";
     clear: both;
 }
 
-// /* Space out content a bit */
-// body {
-//   padding-top: 20px;
-//   padding-bottom: 20px;
-// }
-// /* Everything but the jumbotron gets side spacing for mobile first views */
-// .header,
-// .marketing,
-// .footer {
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
-// /* Custom page header */
-// .header {
-//   border-bottom: 1px solid #e5e5e5;
-//   /* Make the masthead heading the same height as the navigation */
-//   h3 {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     line-height: 40px;
-//     padding-bottom: 19px;
-//   }
-// }
-// /* Custom page footer */
-// .footer {
-//   padding-top: 19px;
-//   color: #777;
-//   border-top: 1px solid #e5e5e5;
-// }
-// .container-narrow > hr {
-//   margin: 30px 0;
-// }
-// /* Main marketing message and sign up button */
-// .jumbotron {
-//   text-align: center;
-//   border-bottom: 1px solid #e5e5e5;
-//   .btn {
-//     font-size: 21px;
-//     padding: 14px 24px;
-//   }
-// }
-// /* Supporting marketing content */
-// .marketing {
-//   margin: 40px 0;
-//   p + h4 {
-//     margin-top: 28px;
-//   }
-// }
-// /* Responsive: Portrait tablets and up */
-// @media screen and (min-width: 768px) {
-//   .container {
-//     max-width: 730px;
-//   }
-//   /* Remove the padding we set earlier */
-//   .header,
-//   .marketing,
-//   .footer {
-//     padding-left: 0;
-//     padding-right: 0;
-//   }
-//   /* Space out the masthead */
-//   .header {
-//     margin-bottom: 30px;
-//   }
-//   /* Remove the bottom border on the jumbotron for visual effect */
-//   .jumbotron {
-//     border-bottom: 0;
-//   }
-// }
 
 /*** Editor ***/
 
@@ -150,7 +90,98 @@ section.editor {
         left: 0;
         width: 200px;
         background-color: #fff;
+        font-size: 13px;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sider-list {
+            border-bottom: 1px solid #ccc;
+            padding: 0 10px;
+        }
+        .sider-title {
+            font-size: 13px;
+            cursor: pointer;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .sider-content {
+            display: none;
+            p {
+                font-size: 12px;
+            }
+        }
+        .active {
+            .sider-title {
+                font-weight: bold;
+                line-height: 16px;
+                margin-bottom: 8px;
+            }
+        }
+        p {
+            margin-left: 4px;
+        }
+        input,
+        textarea {
+            width: 172px;
+            border: 1px solid #aaa;
+            border-radius: 2px;
+            padding: 6px 5px;
+            outline: none;
+            font-size: 13px;
+            font-weight: normal;
+            background-color: #F6F6F6;
+            color: #626262;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 6px;
+        }
+
+        label {
+            font-weight: normal;
+        }
+
+        select {
+            width: 160px;
+            padding: 6px;
+        }
+        textarea {
+            resize: vertical;
+            max-height: 100px;
+        }
     }
+
+    .main {
+        margin: 14px;
+        background-color: #F6F6F6;
+        position: relative;
+        margin-left: 200px;
+
+
+        .handler_vertical {
+            width: 8px;
+            height: 100%;
+            padding: 5px 0;
+            cursor: col-resize;
+            position: absolute;
+            left: 0;
+            background: url("../images/handle-v.png") 3px 50% no-repeat;
+        }
+
+        .handler_horizontal {
+            width: 100%;
+            height: 8px;
+            padding: 0 1px;
+            cursor: row-resize;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: url("../images/handle-h.png") 50% 3px no-repeat;
+        }
+
+    }
+
 }
 
 
@@ -185,6 +216,7 @@ section.editor {
     textarea {
         height: 60px;
         resize: vertical;
+        max-height: 100px;
     }
     input[type='checkbox'] {
         display: inline-block;
@@ -208,12 +240,12 @@ section.editor {
         width: 16px;
         height: 16px;
         text-align: center;
-        line-height: 13px;
+        line-height: 14px;
         font-size: 16px;
         border-radius: 50%;
         color: #000;
         cursor: pointer;
-        $:hover {
+        &:hover {
             background-color: #ff0000;
             color: #fff;
         }
