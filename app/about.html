@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>code</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/codemirror.css -->
+    <link rel="stylesheet" href="bower_components/codemirror/lib/codemirror.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+
+<body style="background:#f6f6f6;">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="normal">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">HCode</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Group</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Editor</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Editor</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </header>
+    <section class="">
+        <div class="container">
+            <h1>About</h1>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <dl>
+                        <dt>Themes</dt>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                    </dl>
+                </div>
+                <div class="col-lg-3">
+                    <dl>
+                        <dt>Themes</dt>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                    </dl>
+                </div>
+                <div class="col-lg-3">
+                    <dl>
+                        <dt>Themes</dt>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                    </dl>
+                </div>
+                <div class="col-lg-3">
+                    <dl>
+                        <dt>Themes</dt>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                        <dd>themes</dd>
+                    </dl>
+                </div>
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2015 HCode.me. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/template" id="reuslt-template">
+        <!doctype html>
+        <html>
+
+        <head>
+            <% if(css !== '') {%>
+                <style>
+                <%=css%>
+                </style>
+                <% } %>
+        </head>
+
+        <body>
+            <%=html%>
+                <script>
+                <%=js%> < /body> < /html >
+                </script>
+                <!-- build:js(.) scripts/vendor.js -->
+                <!-- bower:js -->
+                <script src="/bower_components/modernizr/modernizr.js"></script>
+                <script src="/bower_components/jquery/dist/jquery.js"></script>
+                <script src="/bower_components/underscore/underscore-min.js"></script>
+                <!-- endbower -->
+                <!-- endbuild -->
+                <!-- build:js(.) scripts/plugins.js -->
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+                <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+                <!-- endbuild -->
+                <!-- build:js(.) scripts/codemirror.js -->
+                <script src="/bower_components/codemirror/lib/codemirror.js"></script>
+                <script src="/bower_components/codemirror/mode/xml/xml.js"></script>
+                <script src="/bower_components/codemirror/mode/css/css.js"></script>
+                <script src="/bower_components/codemirror/mode/javascript/javascript.js"></script>
+                <script src="/bower_components/codemirror/keymap/sublime.js"></script>
+                <!-- endbuild -->
+                <!-- build:js scripts/main.js -->
+                <script src="scripts/common.js"></script>
+                <!-- endbuild -->
+        </body>
+
+        </html>
+        http://www.designwall.com/wordpress/subscription/developer/
