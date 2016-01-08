@@ -10,11 +10,11 @@ online coding tool mainly for highcharts
 #### install
 
 ```
-// install grunt + bower + yeomen 
+// install grunt + bower
 
 npm install grunt-cli -g
 npm install bower -g
-npm install yeomen -g
+
 
 ```
 
